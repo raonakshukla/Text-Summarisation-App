@@ -1,14 +1,10 @@
 langchain
-python-dotenv
 langchain-community
 pypdf
 bs4
 pymupdf
 langchain-text-splitters
-langchain-openai
-openai
 langchain-groq
-validators==0.28.1
 youtube_transcript_api
 unstructured
 pytube
