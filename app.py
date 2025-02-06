@@ -78,6 +78,18 @@ if st.button("Summarize the Content"):
         
 
     else:
+        ## Different Models that can be used using Groq API
+        if model =="deepseek-r1-distill-llama-70b":
+            llm =ChatGroq(model="deepseek-r1-distill-llama-70b", groq_api_key=groq_api_key)
+        elif model=="":
+            llm =ChatGroq(model="Gemma2-9b-It", groq_api_key=groq_api_key)
+        elif model=="":
+            llm =ChatGroq(model="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
+        elif model=="":
+            llm =ChatGroq(model="whisper-large-v3-turbo", groq_api_key=groq_api_key)
+        else:
+            llm =ChatGroq(model="mixtral-8x7b-32768", groq_api_key=groq_api_key)
+
         try:
             with st.spinner("Waiting..."):
                 ## loading the website or yt video data
