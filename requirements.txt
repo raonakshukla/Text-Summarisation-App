@@ -1,6 +1,6 @@
 langchain
 langchain-community
-pypdf
+pdfplumber
 bs4
 pymupdf
 langchain-text-splitters
