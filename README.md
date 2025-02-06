@@ -1,4 +1,4 @@
-# Text-Summarisation-App
+# QuickSum: Effortless Summaries for a Smarter Life
 
 This app provides automated text summarization using advanced language models and APIs. It supports summarizing content from YouTube videos, websites, and PDFs, making it easier for users to digest and consume large amounts of information.
 
