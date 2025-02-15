@@ -50,14 +50,6 @@ if uploaded_file is not None:
     df = extract_data(uploaded_file)
 
 
-#Custom Prompt design for the LLM Model
-prompt_template="""
-Provide a summary of the following content in 300 words:
-Content:{text}
-
-"""
-prompt=PromptTemplate(template=prompt_template,input_variables=["text"])
-
 if st.button("Summarize the Content"):
     ## Validate all the inputs
     if not groq_api_key.strip():
