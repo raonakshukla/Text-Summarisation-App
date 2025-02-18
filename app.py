@@ -111,7 +111,7 @@ st.subheader('QuickSum: Effortless Summaries for a Smarter Life')
 # Sidebar inputs
 with st.sidebar:
     groq_api_key = st.text_input("Groq API Key", value="", type="password")#Edit this portion of the code to input
-    option = st.selectbox("What is the source of the document", ("YouTube", "Website URL", "PDF"))
+    option = st.selectbox("What is the source of the document", ("PDF", "Website URL", "YouTube"))
     st.write("You selected:", option)
     language = st.selectbox('Please select the Language',(key for key,value in ietf_language_tags.items()))
     model_name = st.selectbox("Select a model for Summarization", (
