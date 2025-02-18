@@ -121,6 +121,7 @@ with st.sidebar:
 
 # URL or PDF input
 generic_url = st.text_input('Enter your URL here:')
+st.write("or")
 uploaded_file = st.file_uploader('Choose your .pdf file', type="pdf")
 data = []
 
